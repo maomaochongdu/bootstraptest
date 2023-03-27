@@ -5,36 +5,46 @@
     <title>Title</title>
     <link rel="stylesheet" href="static/pluins/bootstrap-5.3.0/css/bootstrap.css">
     <style>
-        .col-2{
-            float: left;
-        }
-        .col-lg-6{
-            float: left;
-        }
-        .col-md-6{
-            float: left;
+        .col-sm-3{
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <div >
-<!--        响应式-->
-        <div class="col-2" style="background-color: red">1</div>
-        <div class="col-20" style="background-color: green">2</div>
-        <div style="clear: both"></div>
-    </div>
-    <div>
-<!--        非响应式-->
-        <div class="col-lg-6" style="background-color: red">1</div>
-        <div class="col-lg-6" style="background-color: green">2</div>
-        <div style="clear: both"></div>
-    </div>
-    <div>
-        <!--        非响应式-->
-        <div class="col-md-6" style="background-color: red">1</div>
-        <div class="col-md-6" style="background-color: green">2</div>
-        <div style="clear: both"></div>
-    </div>
+
+<div class="row">
+<!--
+.col- (超小型设备 - 屏幕宽度小于 576px)
+.col-sm- (小型设备 - 屏幕宽度等于或大于 576px)
+.col-md- (中型设备 - 屏幕宽度等于或大于 768 像素)
+.col-lg- (大型设备 - 屏幕宽度等于或大于 992 像素)
+.col-xl- (xlarge 设备 - 屏幕宽度等于或大于 1200px)
+.col-xxl- (xxlarge 设备 - 屏幕宽度等于或大于 1400px)
+-->
+<!--    四等分-->
+    <div class="col-sm-3" style="background-color: red;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color: red;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color: red;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color: red;">.col-sm-3</div>
+</div>
+  <div class="col-md-3" style="background-color: black;">.col-md-3</div>
+    <div class="col-md-3" style="background-color: black;">.col-md-3</div>
+    <div class="col-md-3" style="background-color: black;">.col-md-3</div>
+    <div class="col-md-3" style="background-color: black;">.col-md-3</div>
+</div>
+
+<div class="row">
+<!--    两个不等分响应式-->
+  <div class="col-sm-4" style="background-color: #0dcaf0">.col-sm-4</div>
+  <div class="col-sm-8" style="background-color: #0a53be">.col-sm-8</div>
+</div>
+<!-- 或者让 Bootstrap 自动处理布局 -->
+<div class="row">
+  <div class="col" style="background-color: black"> ssdfasdfasdfadfadfasdfd</div>
+  <div class="col" style="background-color: red">tadfadfadfasdfadfadft</div>
+  <div class="col" style="background-color: #0f5132">yadfadfadfadfadfafay</div>
+    <div class="col" style="background-color: black">yeredefadfy</div>
+</div>
 
 </body>
 </html>
